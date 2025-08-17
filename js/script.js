@@ -2,7 +2,7 @@
 let friendLinks = JSON.parse(localStorage.getItem('friendLinks')) || [
     {
         name: 'Rdtuetr',
-        url: 'https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=html%3E%20%3Chtml%3E%20%3Chead%3E%20%3Cmeta%20http-equiv=Content-Type%20content=&scene=124#wechat_redirect',
+        url: 'rdtuetr.top',
         description: '本人网页',
         avatar: 'https://i.postimg.cc/bJzk1wzt/20250817142658.jpg'
     }
