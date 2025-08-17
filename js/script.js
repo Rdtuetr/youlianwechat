@@ -1,10 +1,10 @@
 // 初始化友链数据
 let friendLinks = JSON.parse(localStorage.getItem('friendLinks')) || [
     {
-        name: '示例网站',
-        url: 'https://example.com',
-        description: '这是一个示例网站，展示友链的显示效果',
-        avatar: 'https://api.dicebear.com/6.x/micah/svg?seed=example'
+        name: 'Rdtuetr',
+        url: 'http://weixin.qq.com/r/mp/AhGKkhLEqk-VrVbx90QQ',
+        description: '本人网页',
+        avatar: 'https://i.postimg.cc/bJzk1wzt/20250817142658.jpg'
     }
 ];
 
