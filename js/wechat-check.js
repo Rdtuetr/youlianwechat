@@ -12,10 +12,31 @@ function getCurrentPageUrl() {
     return window.location.href;
 }
 
-// 使用在线二维码生成服务
+// 使用纯JavaScript生成简单的二维码提示图
 function generateQRCode(url) {
-    // 使用QR Server API生成二维码
-    return 'https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=' + encodeURIComponent(url);
+    // 创建一个canvas元素
+    const canvas = document.createElement('canvas');
+    canvas.width = 200;
+    canvas.height = 200;
+    const ctx = canvas.getContext('2d');
+    
+    // 绘制白色背景
+    ctx.fillStyle = 'white';
+    ctx.fillRect(0, 0, 200, 200);
+    
+    // 绘制简单的提示文字和图形
+    ctx.fillStyle = 'black';
+    ctx.font = '14px Arial';
+    ctx.textAlign = 'center';
+    ctx.fillText('请使用微信扫码', 100, 50);
+    ctx.fillText('访问本页面', 100, 70);
+    
+    // 绘制简化的二维码图案
+    ctx.strokeRect(50, 80, 100, 100);
+    ctx.fillText('微信扫码', 100, 130);
+    
+    // 将canvas转换为图片URL
+    return canvas.toDataURL('image/png');
 }
 
 // 页面加载时检测浏览器环境
