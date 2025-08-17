@@ -3,14 +3,14 @@ let friendLinks = JSON.parse(localStorage.getItem('friendLinks')) || [
     {
         name: 'Rdtuetr',
         url: '#',
-        description: '本人网页',
+        description: '本人首页',
         avatar: 'https://i.postimg.cc/bJzk1wzt/20250817142658.jpg'
     },
     {
-        name: '书法小生',
-        url: '#',
+        name: '书法小生--碧云轩主',
+        url: 'https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=html%3E%20%3Chtml%3E%20%3Chead%3E%20%3Cmeta%20http-equiv=Content-Type%20content=&scene=124#wechat_redirect',
         description: 'Friends',
-        avatar: 'https://i.postimg.cc/bJzk1wzt/20250817142658.jpg'
+        avatar: 'https://i.postimg.cc/0QZbpGQY/20250817154734.jpg'
     }
 ];
 
