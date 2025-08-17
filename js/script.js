@@ -2,8 +2,14 @@
 let friendLinks = JSON.parse(localStorage.getItem('friendLinks')) || [
     {
         name: 'Rdtuetr',
-        url: 'rdtuetr.top',
+        url: '#',
         description: '本人网页',
+        avatar: 'https://i.postimg.cc/bJzk1wzt/20250817142658.jpg'
+    }
+    {
+        name: '书法小生',
+        url: '#',
+        description: 'Friends',
         avatar: 'https://i.postimg.cc/bJzk1wzt/20250817142658.jpg'
     }
 ];
